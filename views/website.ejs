@@ -21,6 +21,12 @@
       <button type="submit">Shorten</button>
     </form>
 
+    <!-- ERROR MESSAGE -->
+    <% if (error) { %>
+      <p class="error"><%= error %></p>
+    <% } %>
+
+    <!-- RESULT -->
     <% if (shortUrl) { %>
       <div class="result">
         <p>Short URL</p>
@@ -32,3 +38,4 @@
 
   </div>
 </body>
+</html>
